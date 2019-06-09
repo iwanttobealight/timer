@@ -6,6 +6,7 @@ import { getHours } from "../helpers/getHours";
 import { getDays } from "../helpers/getDays";
 import { EVENT_DAY } from "../helpers/eventDay";
 
+import "./Clock.css";
 export class Clock extends Component {
   constructor() {
     super();
@@ -34,7 +35,7 @@ export class Clock extends Component {
     const { days, hours, min, sec } = this.state;
 
     return (
-      <p>
+      <p class="clock">
         {`${getDays(days)} ${getHours(hours)} ${getMinutes(min)} ${getSeconds(
           sec
         )}`}
