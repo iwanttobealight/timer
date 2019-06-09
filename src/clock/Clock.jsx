@@ -4,6 +4,7 @@ import { getSeconds } from "../helpers/getSeconds";
 import { getMinutes } from "../helpers/getMinutes";
 import { getHours } from "../helpers/getHours";
 import { getDays } from "../helpers/getDays";
+import { EVENT_DAY } from "../helpers/eventDay";
 
 export class Clock extends Component {
   constructor() {
@@ -25,7 +26,7 @@ export class Clock extends Component {
   }
 
   getTime() {
-    const { days, hours, min, sec } = getRemainingTime("2019-08-01");
+    const { days, hours, min, sec } = getRemainingTime(EVENT_DAY);
     this.setState({ days, hours, min, sec });
   }
 
