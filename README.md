@@ -11,17 +11,17 @@ git cz
 ### install
 
 ```js
-yarn add
+npm install
 ```
 
 ### start development
 
 ```js
-yarn dev
+npm run dev
 ```
 
 ### create bundle
 
 ```js
-yarn build
+npm run build
 ```
