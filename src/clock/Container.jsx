@@ -34,13 +34,6 @@ export class Container extends Component {
   render() {
     const { days, hours, min, sec } = this.state;
 
-    return (
-      <View
-        days={getDays(days)}
-        hours={getHours(hours)}
-        min={getMinutes(min)}
-        sec={getSeconds(sec)}
-      />
-    );
+    return <View days={getDays(days)} hours={hours} min={min} sec={sec} />;
   }
 }

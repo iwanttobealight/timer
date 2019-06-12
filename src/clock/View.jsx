@@ -1,7 +1,11 @@
 import { h } from "preact";
 
 import "./Clock.css";
+import { addZero } from "../helpers/addZero";
 
 export const View = ({ days, hours, min, sec }) => (
-  <p class="clock">{`${days} ${hours} ${min} ${sec}`}</p>
+  <article class="clock">
+    <p>{days}</p>
+    <p>{`${addZero(hours)}:${addZero(min)}:${addZero(sec)}`}</p>
+  </article>
 );
