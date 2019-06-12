@@ -6,6 +6,8 @@ import { addZero } from "../helpers/addZero";
 export const View = ({ days, hours, min, sec }) => (
   <article class="clock">
     <p class="text">{days}</p>
-    <p class="text">{`${addZero(hours)}:${addZero(min)}:${addZero(sec)}`}</p>
+    <p class="text dynamic">{`${addZero(hours)}:${addZero(min)}:${addZero(
+      sec
+    )}`}</p>
   </article>
 );
