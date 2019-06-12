@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel index.html",
     "prebuild": "rm -rf dist",
-    "build": "parcel build index.js",
+    "build": "parcel build index.html --public-url ./",
     "lint": "node_modules/.bin/eslint index.js"
   },
   "dependencies": {
