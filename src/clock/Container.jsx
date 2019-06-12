@@ -5,9 +5,9 @@ import { getMinutes } from "../helpers/getMinutes";
 import { getHours } from "../helpers/getHours";
 import { getDays } from "../helpers/getDays";
 import { EVENT_DAY } from "../helpers/eventDay";
+import { View } from "./View";
 
-import "./Clock.css";
-export class Clock extends Component {
+export class Container extends Component {
   constructor() {
     super();
     this.state = {
@@ -35,11 +35,12 @@ export class Clock extends Component {
     const { days, hours, min, sec } = this.state;
 
     return (
-      <p class="clock">
-        {`${getDays(days)} ${getHours(hours)} ${getMinutes(min)} ${getSeconds(
-          sec
-        )}`}
-      </p>
+      <View
+        days={getDays(days)}
+        hours={getHours(hours)}
+        min={getMinutes(min)}
+        sec={getSeconds(sec)}
+      />
     );
   }
 }
