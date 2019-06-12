@@ -14,6 +14,7 @@ export class App extends Component {
       <div className="container">
         <img
           class="background"
+          alt="space NASA photo"
           src={`data:image/png;base64,${background.toString("base64")}`}
         />
         <Clock />
