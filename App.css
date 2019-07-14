@@ -27,6 +27,10 @@ body {
   }
 }
 
+body::selection {
+    background-color: #736a94;
+}
+
 .container {
   background-size: cover;
   display: grid;
