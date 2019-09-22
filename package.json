@@ -10,7 +10,7 @@
     "lint": "node_modules/.bin/eslint index.js"
   },
   "dependencies": {
-    "dayjs": "^1.8.14",
+    "dayjs": "^1.8.16",
     "eslint-config-standard-preact": "^1.1.6",
     "normalize.css": "^8.0.1",
     "preact": "^8.5.2"
