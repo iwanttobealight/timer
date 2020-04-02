@@ -1,7 +1,6 @@
 import { h, render, Component } from "preact";
 import Clock from "./src/clock";
 import "normalize.css";
-import images from "./src/images";
 import fs from "fs";
 
 import "./App.css";

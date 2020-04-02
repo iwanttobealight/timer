@@ -11,16 +11,25 @@ export class Container extends Component {
       days: "",
       hours: "",
       min: "",
-      sec: ""
+      sec: "",
+      timerId: null
     };
   }
 
   componentDidMount() {
     this.getTime();
 
-    setInterval(() => {
+    const timerId = setInterval(() => {
       this.getTime();
     }, 1000);
+
+    this.setState({ timerId });
+  }
+
+  componentWillUnmount() {
+    const { timerId } = this.state;
+
+    clearInterval(timerId);
   }
 
   getTime() {
