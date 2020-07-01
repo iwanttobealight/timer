@@ -13,7 +13,7 @@
     "dayjs": "^1.8.16",
     "eslint-config-standard-preact": "^1.1.6",
     "normalize.css": "^8.0.1",
-    "preact": "^8.5.2"
+    "preact": "^10.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
