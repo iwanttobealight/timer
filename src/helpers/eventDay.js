@@ -1,1 +1,1 @@
-export const EVENT_DAY = new Date("Sun Dec 5 2021 15:00");
+export const EVENT_DAY = new Date("Dec 24 2022 23:30");
